@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Smart Water. Better Crops. AquaBloom - Intelligent irrigation management for farmers." />
+    <meta name="theme-color" content="#006D77" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AquaBloom" />
+    <title>AquaBloom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#006D77', // Deep Water Blue
+                dark: '#004E56',
+                light: '#E0F2F4',
+              },
+              secondary: {
+                DEFAULT: '#2A9D8F', // Fresh Agriculture Green
+                light: '#E8F8F5',
+              },
+              surface: {
+                DEFAULT: '#FFFFFF',
+                subtle: '#F8FAFC',
+              },
+              status: {
+                success: '#2A9D8F',
+                warning: '#E9C46A',
+                error: '#E76F51',
+                info: '#3D5A80',
+              },
+              text: {
+                main: '#1F2937', // Charcoal
+                secondary: '#64748B', // Slate
+                inverted: '#FFFFFF',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            },
+            boxShadow: {
+              'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+              'glow': '0 0 15px rgba(42, 157, 143, 0.3)',
+            },
+            borderRadius: {
+              'xl': '16px',
+              '2xl': '24px',
+              '3xl': '32px',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+      
+      body {
+        background-color: #F1F5F9; /* Slate 100 */
+        color: #1F2937;
+        font-family: 'Inter', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Hide scrollbar for clean mobile look */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Animation Utilities */
+      .fade-in {
+        animation: fadeIn 0.4s ease-out forwards;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

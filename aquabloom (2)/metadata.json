@@ -1,0 +1,8 @@
+{
+  "name": "AquaBloom",
+  "description": "Smart irrigation and AI-powered agriculture assistant for Tunisian farmers.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
